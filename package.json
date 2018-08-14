@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Node.js App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rojasleon/server.git"
+  },
+  "keywords": [
+    "Node",
+    "React",
+    "Javascript"
+  ],
+  "author": "Juan Luis Rojas León",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rojasleon/server/issues"
+  },
+  "homepage": "https://github.com/rojasleon/server#readme"
+}
