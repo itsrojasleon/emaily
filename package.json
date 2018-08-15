@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/rojasleon/server/issues"
   },
-  "homepage": "https://github.com/rojasleon/server#readme"
+  "homepage": "https://github.com/rojasleon/server#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
