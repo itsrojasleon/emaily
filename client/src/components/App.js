@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 
+// App Components
 import Header from './Header.js';
-
-const Dashboard = () => <h2>Dashboard</h2>;
+import Landing from './Landing';
 
 class App extends Component {
   componentDidMount() {
@@ -15,11 +15,12 @@ class App extends Component {
     return (
       <Fragment>
         <BrowserRouter>
-          <Switch>
+          <Fragment>
             <Header />
-            <Route exact path="/" render={() => <div>Hello there</div>} />
-            <Route path="/surveys" component={Dashboard} />
-          </Switch>
+            <Route exact path="/" component={Landing} />
+            <Route path="/surveys" render={() => <div>Hello Dashboard</div>} />
+            <Route path="/surveys/new" render={() => <div>Hello new Survey</div>} />
+          </Fragment>
         </BrowserRouter>
       </Fragment>
     );
