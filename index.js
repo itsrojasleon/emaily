@@ -22,6 +22,7 @@ app.use(passport.session());
 // const authRoutes = require('./routes/authRoutes');
 // authRoutes(app);
 require('./routes/authRoutes')(app);// Is BETTER and great!
+require('./routes/billingRoutes')(app);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
