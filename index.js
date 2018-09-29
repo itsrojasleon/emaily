@@ -24,8 +24,11 @@ app.use(passport.session());
 
 // const authRoutes = require('./routes/authRoutes');
 // authRoutes(app);
-require('./routes/authRoutes')(app);// Is BETTER and great!
+// ----------------
+// Is BETTER and great!
+require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
+require('./routes/surveyRoutes')(app);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
