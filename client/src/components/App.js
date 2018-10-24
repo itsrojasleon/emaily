@@ -17,12 +17,12 @@ class App extends Component {
     return (
       <Fragment>
         <BrowserRouter>
-          <Fragment>
+          <div className="container">
             <Header />
             <Route exact path="/" component={Landing} />
             <Route path="/surveys" component={Dashboard} />
             <Route path="/surveys/new" component={SurveyNew} />
-          </Fragment>
+          </div>
         </BrowserRouter>
       </Fragment>
     );
