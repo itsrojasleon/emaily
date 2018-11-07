@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchSurveys } from '../actions';
+import SurveyList from '../components/surveys/SurveyList';
 
 class Dashboard extends React.Component {
   componentDidMount() {
@@ -15,11 +16,7 @@ class Dashboard extends React.Component {
             <i className="material-icons">add</i>
           </Link>
         </div>
-        {this.props.surveys.map((survey) => (
-          <div>
-            {survey.title}
-          </div>
-        ))}
+        <SurveyList />
       </div>
     );
   }
