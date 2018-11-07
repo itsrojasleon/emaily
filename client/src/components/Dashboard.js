@@ -1,13 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { fetchSurveys } from '../actions';
-import SurveyList from '../components/surveys/SurveyList';
+import SurveyList from './surveys/SurveyList';
 
 class Dashboard extends React.Component {
-  componentDidMount() {
-    this.props.fetchSurveys();
-  }
   render() {
     return (
       <div>
@@ -21,9 +16,5 @@ class Dashboard extends React.Component {
     );
   }
 }
-function mapStateToProps({ surveys }) {
-  return {
-    surveys
-  };
-}
-export default connect(mapStateToProps, {fetchSurveys})(Dashboard);
+
+export default Dashboard;
