@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <Fragment>
         <BrowserRouter>
-          <div className="container">
+          <div className="container-fluid">
             <Header />
             <Route exact path="/" component={Landing} />
             <Route path="/surveys" component={Dashboard} />
@@ -28,4 +28,7 @@ class App extends Component {
     );
   }
 }
-export default connect(null, actions)(App);
+export default connect(
+  null,
+  actions
+)(App);
