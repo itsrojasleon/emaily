@@ -15,31 +15,31 @@ class Header extends Component {
         );
       default:
         return [
-          <ul key={1}>
-            <li><Payments /></li>
-            <li style={{ margin: '0 10px' }}>
+          <ul className="menu-items" key={1}>
+            <li className="menu-item"><Payments /></li>
+            <li className="menu-item" style={{ margin: '0 10px' }}>
               Credits: {this.props.auth.credits}
             </li>
-            <li><a href="/api/logout">Logout</a></li>
+            <li className="menu-item"><a href="/api/logout">Logout</a></li>
           </ul>
         ];
     }
   }
   render() {
     return (
-      <header>
-        <nav>
-          <div className="nav-wrapper">
+      <header className="header">
+        <nav className="nav">
+          <div>
             <Link 
               to={this.props.auth ? '/surveys' : '/'}
-              className="left brand-logo"
+              className="brand-logo"
             >
               Emaily
             </Link>
-            <ul className="right">
-              {this.renderContent()}
-            </ul>
           </div>
+          <React.Fragment>
+            {this.renderContent()}
+          </React.Fragment>
         </nav>
       </header>
     );

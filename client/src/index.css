@@ -1,0 +1,39 @@
+/* Universal Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* App component */
+
+/* Header Component */
+
+.header {
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+}
+.nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-logo {
+  color: white;
+  text-decoration: none;
+}
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.menu-item, .menu-item > a  {
+  color: white;
+  text-decoration: none;
+}

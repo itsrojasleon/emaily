@@ -1,5 +1,3 @@
-import 'materialize-css/dist/css/materialize.min.css';
-
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
@@ -9,6 +7,8 @@ import thunk from 'redux-thunk';
 import reducers from './reducers';
 
 import App from './components/App';
+
+import './index.css';
 
 //import axios from 'axios';
 // window.axios = axios;
