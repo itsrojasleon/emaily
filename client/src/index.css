@@ -76,6 +76,7 @@
   align-content: center;
   justify-content: center;
   display: flex;
+  margin-bottom: 20px;
 }
 .add {
   color: rgb(63,145,228);
@@ -87,8 +88,21 @@
 .add:hover {
   opacity: .8;
 }
+.survey-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 247px);
+  grid-gap: 10px;
+}
+.card {
+  border: 1px solid rgb(233,236,239);
+  padding: 10px;
+  border-radius: 3px;
+}
 @media(max-width: 769px) {
   .dashboard {
     width: 95%;
+  }
+  .survey-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

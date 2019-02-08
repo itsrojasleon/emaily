@@ -8,7 +8,7 @@ class SurveyList extends React.Component {
   }
   renderSurveys = () => {
     return this.props.surveys.reverse().map((survey, index) => (
-      <div className="card darken-1" key={index}>
+      <div className="card" key={index}>
         <div className="card-content">
           <span className="card-title"></span>
           <p>
@@ -27,7 +27,7 @@ class SurveyList extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="survey-container">
         {this.renderSurveys()}
       </div>
     );
