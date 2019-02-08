@@ -27,7 +27,7 @@
   padding-bottom: 20px;
 }
 .brand-logo {
-  color: black;
+  color: rgb(36,61,86);
   text-decoration: none;
 }
 .menu-items {
@@ -59,6 +59,7 @@
 
 .emaily {
   font-size: 35px;
+  color: rgb(36,61,86);
 }
 .collect {
   font-size: 20px;
@@ -90,13 +91,32 @@
 }
 .survey-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 247px);
+  grid-template-columns: repeat(auto-fill, 280px);
   grid-gap: 10px;
 }
 .card {
-  border: 1px solid rgb(233,236,239);
+  border: 1px solid rgb(245,245,245);
   padding: 10px;
   border-radius: 3px;
+  transition: .2s;
+}
+.card:hover {
+  border: 1px solid rgb(153,198,241);
+}
+.card-title {
+  font-size: 18px;
+  color: rgb(32,48,61);
+  border-bottom: 1px solid rgb(245,245,245);
+  padding-bottom: 6px;
+}
+.card-body {
+  color: rgb(23,119,222);
+  margin-top: 10px;
+}
+.date {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(118,119,119);
 }
 @media(max-width: 769px) {
   .dashboard {

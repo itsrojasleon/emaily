@@ -9,23 +9,24 @@ class SurveyList extends React.Component {
   renderSurveys = () => {
     return this.props.surveys.reverse().map((survey, index) => (
       <div className="card" key={index}>
-        <div className="card-content">
-          <span className="card-title"></span>
-          <p>
+        <div>
+          <h3 className="card-title">{survey.title}</h3>
+          <p className="card-body">
             {survey.body}
           </p>
-          <p className="right">
+          <p className="date">
             Sent on: {new Date(survey.dateSent).toLocaleDateString()}
           </p>
         </div>
-        <div className="card-action">
-          <a>Yes: {survey.yes}</a>
-          <a>No: {survey.no}</a>
+        <div>
+          <span>Yes: {survey.yes}</span>
+          <span> No: {survey.no}</span>
         </div>
       </div>
     ));
   }
   render() {
+    console.log(this.props.surveys)
     return (
       <div className="survey-container">
         {this.renderSurveys()}
