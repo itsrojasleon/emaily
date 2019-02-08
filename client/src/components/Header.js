@@ -34,7 +34,7 @@ class Header extends Component {
               to={this.props.auth ? '/surveys' : '/'}
               className="brand-logo"
             >
-              Emaily
+              <h1>Emaily</h1>
             </Link>
           </div>
           <React.Fragment>

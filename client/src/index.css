@@ -1,8 +1,10 @@
 /* Universal Styles */
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Oxygen', sans-serif;
 }
 
 /* App component */
@@ -11,7 +13,7 @@
 
 .header {
   width: 100%;
-  background-color: black;
+  background-color: white;
   padding: 20px;
 }
 .nav {
@@ -21,9 +23,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid rgb(233,236,239);
+  padding-bottom: 20px;
 }
 .brand-logo {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 .menu-items {
@@ -34,6 +38,19 @@
   list-style: none;
 }
 .menu-item, .menu-item > a  {
-  color: white;
+  color: black;
   text-decoration: none;
+}
+.add-credits {
+  background-color: white;
+  color: rgb(153,198,241);
+  padding: 10px 14px;
+  border: 1px solid rgb(153,198,241);
+  transition: .3s;
+  font-size: 17px;
+  width: 100%;
+}
+.add-credits:hover {
+  cursor: pointer;
+  transform: scale(1.03);
 }
