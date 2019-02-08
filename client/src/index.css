@@ -91,7 +91,7 @@
 }
 .survey-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 280px);
+  grid-template-columns: repeat(auto-fill, 277px);
   grid-gap: 10px;
 }
 .card {
