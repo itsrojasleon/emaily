@@ -5,9 +5,9 @@ import SurveyList from './surveys/SurveyList';
 class Dashboard extends React.Component {
   render() {
     return (
-      <div>
-        <div className="fixed-action-btn">
-          <Link to="/surveys/new" className="btn-floating btn-large red">
+      <div className="dashboard">
+        <div className="add-container">
+          <Link to="/surveys/new" className="add">
             <i className="material-icons">add</i>
           </Link>
         </div>

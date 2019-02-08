@@ -65,3 +65,30 @@
   margin-top: 15px;
   color: #020202;
 }
+
+/* Dashboard */
+
+.dashboard {
+  width: 80%;
+  margin: auto;
+}
+.add-container {
+  align-content: center;
+  justify-content: center;
+  display: flex;
+}
+.add {
+  color: rgb(63,145,228);
+  transition: .3s;
+}
+.add > i {
+  font-size: 30px;
+}
+.add:hover {
+  opacity: .8;
+}
+@media(max-width: 769px) {
+  .dashboard {
+    width: 95%;
+  }
+}
