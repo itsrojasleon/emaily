@@ -2,10 +2,10 @@ import React from 'react';
 
 const Landing = () => (
   <div style={{ textAlign: 'center' }}>
-    <h1>
+    <h2 className="emaily">
       Emaily!
-    </h1>
-    Collect feedback from your users
+    </h2>
+    <p className="collect">Collect feedback from your users</p>
   </div>
 );
 export default Landing;

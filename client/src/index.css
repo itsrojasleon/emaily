@@ -43,7 +43,7 @@
 }
 .add-credits {
   background-color: white;
-  color: rgb(153,198,241);
+  color: rgb(23,119,222);
   padding: 10px 14px;
   border: 1px solid rgb(153,198,241);
   transition: .3s;
@@ -53,4 +53,15 @@
 .add-credits:hover {
   cursor: pointer;
   transform: scale(1.03);
+}
+
+/* Landing */
+
+.emaily {
+  font-size: 35px;
+}
+.collect {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #020202;
 }
