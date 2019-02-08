@@ -187,6 +187,38 @@
   font-size: 17px;
   text-decoration: none;
 }
+.button-cancel:hover {
+  cursor: pointer;
+}
 @media(max-width: 769px) {
   
+}
+/* surveys/SurveyFormReview */
+.survey-form-review-container {
+  width: 50%;
+  margin: auto;
+}
+.please-confirm {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: rgb(32,48,61);
+}
+.please-confirm:hover {
+  cursor: pointer;
+}
+.label-review {
+  font-size: 18px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+.data-review {
+  color: rgb(36,61,86);
+  font-size: 17px;
+}
+.description {
+  display: flex;
+}
+.buttons-review {
+  display: flex;
+  justify-content: space-between;
 }
