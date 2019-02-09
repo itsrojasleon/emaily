@@ -255,3 +255,18 @@
   display: flex;
   justify-content: space-between;
 }
+
+/*LoginFirst*/
+.login-first {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.how-is-it-going {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.you-need {
+  font-size: 20px;
+  color: rgb(118, 119, 119);
+}
