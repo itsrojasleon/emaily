@@ -23,11 +23,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgb(233,236,239);
+  border-bottom: 1px solid rgb(233, 236, 239);
   padding-bottom: 20px;
 }
 .brand-logo {
-  color: rgb(36,61,86);
+  color: rgb(36, 61, 86);
   text-decoration: none;
 }
 .menu-items {
@@ -37,16 +37,17 @@
   align-items: center;
   list-style: none;
 }
-.menu-item, .menu-item > a  {
+.menu-item,
+.menu-item > a {
   color: black;
   text-decoration: none;
 }
 .add-credits {
   background-color: white;
-  color: rgb(23,119,222);
+  color: rgb(23, 119, 222);
   padding: 10px 14px;
-  border: 1px solid rgb(153,198,241);
-  transition: .3s;
+  border: 1px solid rgb(153, 198, 241);
+  transition: 0.3s;
   font-size: 17px;
   width: 100%;
 }
@@ -59,12 +60,23 @@
 
 .emaily {
   font-size: 35px;
-  color: rgb(36,61,86);
+  color: rgb(36, 61, 86);
 }
 .collect {
   font-size: 20px;
   margin-top: 15px;
   color: #020202;
+  margin-bottom: 50px;
+}
+.watch-my-surveys {
+  text-decoration: none;
+  background-color: white;
+  color: rgb(23, 119, 222);
+  padding: 10px 14px;
+  border: 1px solid rgb(153, 198, 241);
+  transition: 0.3s;
+  font-size: 17px;
+  width: 100%;
 }
 
 /* Dashboard */
@@ -80,14 +92,14 @@
   margin-bottom: 20px;
 }
 .add {
-  color: rgb(63,145,228);
-  transition: .3s;
+  color: rgb(63, 145, 228);
+  transition: 0.3s;
 }
 .add > i {
   font-size: 30px;
 }
 .add:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 .survey-container {
   display: grid;
@@ -95,30 +107,30 @@
   grid-gap: 10px;
 }
 .card {
-  border: 1px solid rgb(245,245,245);
+  border: 1px solid rgb(245, 245, 245);
   padding: 10px;
   border-radius: 3px;
-  transition: .2s;
+  transition: 0.2s;
 }
 .card:hover {
-  border: 1px solid rgb(153,198,241);
+  border: 1px solid rgb(153, 198, 241);
 }
 .card-title {
   font-size: 18px;
-  color: rgb(32,48,61);
-  border-bottom: 1px solid rgb(245,245,245);
+  color: rgb(32, 48, 61);
+  border-bottom: 1px solid rgb(245, 245, 245);
   padding-bottom: 6px;
 }
 .card-body {
-  color: rgb(23,119,222);
+  color: rgb(23, 119, 222);
   margin-top: 10px;
 }
 .date {
   margin-top: 10px;
   margin-bottom: 10px;
-  color: rgb(118,119,119);
+  color: rgb(118, 119, 119);
 }
-@media(max-width: 769px) {
+@media (max-width: 769px) {
   .dashboard {
     width: 95%;
   }
@@ -131,7 +143,7 @@
   width: 80%;
   margin: auto;
 }
-@media(max-width: 769px) {
+@media (max-width: 769px) {
   .survey-new-container {
     width: 95%;
   }
@@ -147,20 +159,20 @@
 .label {
   font-size: 18px;
   margin-bottom: 5px;
-  color: rgb(81,102,123);
+  color: rgb(81, 102, 123);
 }
 .input {
   padding: 6px 4px;
   font-size: 18px;
   border-radius: 3px;
   border: none;
-  background-color: rgb(245,245,245);
+  background-color: rgb(245, 245, 245);
 }
 .input:focus {
   outline: 0;
 }
 .error-input {
-  color: rgb(23,119,222);
+  color: rgb(23, 119, 222);
   font-size: 14px;
 }
 .buttons {
@@ -170,7 +182,7 @@
   justify-content: space-between;
 }
 .button-next {
-  background-color: rgb(23,119,222);
+  background-color: rgb(23, 119, 222);
   color: white;
   padding: 10px 14px;
   border: none;
@@ -180,7 +192,7 @@
   cursor: pointer;
 }
 .button-cancel {
-  background-color: rgb(243,36,46);
+  background-color: rgb(243, 36, 46);
   color: white;
   padding: 10px 14px;
   border: none;
@@ -190,8 +202,7 @@
 .button-cancel:hover {
   cursor: pointer;
 }
-@media(max-width: 769px) {
-  
+@media (max-width: 769px) {
 }
 /* surveys/SurveyFormReview */
 .survey-form-review-container {
@@ -201,7 +212,7 @@
 .please-confirm {
   font-size: 20px;
   margin-bottom: 15px;
-  color: rgb(32,48,61);
+  color: rgb(32, 48, 61);
 }
 .please-confirm:hover {
   cursor: pointer;
@@ -212,7 +223,7 @@
   margin-bottom: 10px;
 }
 .data-review {
-  color: rgb(36,61,86);
+  color: rgb(36, 61, 86);
   font-size: 17px;
 }
 .description {
