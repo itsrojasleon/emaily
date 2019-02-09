@@ -11,9 +11,7 @@ class SurveyList extends React.Component {
       <div className="card" key={index}>
         <div>
           <h3 className="card-title">{survey.title}</h3>
-          <p className="card-body">
-            {survey.body}
-          </p>
+          <p className="card-body">{survey.body}</p>
           <p className="date">
             Sent on: {new Date(survey.dateSent).toLocaleDateString()}
           </p>
@@ -24,14 +22,9 @@ class SurveyList extends React.Component {
         </div>
       </div>
     ));
-  }
+  };
   render() {
-    console.log(this.props.surveys)
-    return (
-      <div className="survey-container">
-        {this.renderSurveys()}
-      </div>
-    );
+    return <div className="survey-container">{this.renderSurveys()}</div>;
   }
 }
 function mapStateToProps({ surveys }) {
@@ -39,4 +32,7 @@ function mapStateToProps({ surveys }) {
     surveys
   };
 }
-export default connect(mapStateToProps, {fetchSurveys})(SurveyList);
+export default connect(
+  mapStateToProps,
+  { fetchSurveys }
+)(SurveyList);
