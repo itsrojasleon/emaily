@@ -1,10 +1,11 @@
-# CoolEmails
+# Emaily
 
-Buy and Send Emails
+Buy and send Emails to your users
 
 ## Prerequisites
 > Node.js 10.7.0 or latest
 > Npm 6.1.0 or latest
+> Git 2.21.0 or latest
 
 ## Getting Started
 Download the repository
